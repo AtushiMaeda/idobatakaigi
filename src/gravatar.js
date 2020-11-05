@@ -4,5 +4,5 @@ export const gravatarPath = (string) => {
   const lowerCaseString = string.trim().toLowerCase();
   const md5 = crypto.createHash('md5');
   const digest = md5.update(lowerCaseString, 'binary').digest('hex');
-  return `https://www.gravatoar.com/${digest}/?d=robohash`;
+  return `https://www.gravatar.com/${digest}/?d=robohash`;
 };
